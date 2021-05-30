@@ -7,11 +7,12 @@ import Works from './Component/Work/Works'
 
 const routes = () => {
     return (
-        <Router>
+        <Router basename={'/myprofile'}>
             <Switch>
-                <Route path="/myprofile/projects" component={Project} exact />
-                <Route path="/myprofile/work" component={Works} exact />
-                <Route path="/myprofile/" component={About} exact />
+                <Route path="/projects" component={Project} exact />
+                <Route path="/work" component={Works} exact />
+                <Route path="/profile" component={About} exact />
+                <Redirect path="/" to="/profile" />
             </Switch>
         </Router>
     )
