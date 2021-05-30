@@ -9,10 +9,10 @@ const routes = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/projects" component={Project} exact />
-                <Route path="/work" component={Works} exact />
-                <Route path="/profile" component={About} exact />
-                <Redirect path="/" to="/profile"/>
+                <Route path="/myprofile/projects" component={Project} exact />
+                <Route path="/myprofile/work" component={Works} exact />
+                <Route path="/myprofile/profile" component={About} exact />
+                <Redirect path="/myprofile/" to="/myprofile/profile"/>
             </Switch>
         </Router>
     )

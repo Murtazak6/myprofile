@@ -1,5 +1,5 @@
 {
-  "homepage": "https://murtazak6.github.io/myprofile/",
+  "homepage": "https://murtazak6.github.io/myprofile/:id",
   "name": "myprofile",
   "version": "0.1.0",
   "private": true,
